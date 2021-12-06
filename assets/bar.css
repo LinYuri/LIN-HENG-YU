@@ -1,0 +1,25 @@
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.container {
+  width: 100%; /* Full width */
+  background-color: 	#FFFFFF; /* Grey background */
+}
+
+@font-face {
+  font-family: t1;
+ src: url(assets/jf-openhuninn-1.1.ttf)}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+  font-family:'t1';
+}
+
+.html {width: 90%; background-color: #FF00FF;} /* Green */
+.css {width: 80%; background-color: 	#E38EFF;} /* Blue */
+.js {width: 65%; background-color: 	#D28EFF;} /* Red */
+.php {width: 60%; background-color: #FFB3FF;} /* Dark Grey */

@@ -1,0 +1,148 @@
+/* SKILL CSS */
+@font-face {
+    font-family: t1;
+   src: url(assets/jf-openhuninn-1.1.ttf)}
+
+.skill p{
+    font-family: 'VT323', monospace; 
+    font-size: 40px;
+    color: whitesmoke;
+    margin: 0px;
+}
+.skill{
+    padding: 10px 15px 0px 20px;
+    margin: 0;
+}
+
+.rating-bar {
+background: white;
+padding: 3px;
+}
+.rating-bar span {
+display: block;
+height: 30px;
+}
+.rating-bar,.rating-bar span {
+border-radius: 4px;
+}
+/* Used to color the bars */
+.ab {
+    width: 90%; background-color: #FF00FF;
+}
+.cd {
+    width: 85%; background-color: 	#E38EFF;
+}
+.ef{
+    width: 55%; background-color: 	#D28EFF;
+}
+.gh{
+    width: 50%; background-color: #FFB3FF;
+}
+/* rating from 1 to 10 */
+.rate-1 {
+width: 10%;
+}
+.rate-2 {
+width: 20%;
+}
+.rate-3 {
+width: 30%;
+}
+.rate-4 {
+width: 40%;
+}
+.rate-5 {
+width: 50%;
+}
+.rate-6 {
+width: 60%;
+}
+.rate-7 {
+width: 70%;
+}
+.rate-8 {
+width: 80%;
+}
+.rate-9 {
+width: 90%;
+}
+.rate-10 {
+width: 100%;
+}
+
+/* Animation */
+.animate {
+animation: progress 2s linear;
+-moz-animation: progress 2s linear;
+-webkit-animation: progress 2s linear;
+-ms-animation: progress 2s linear;
+-o-animation: progress 2s linear;
+}
+/* 10-100% of the width of black bar */
+@-webkit-keyframes progress {
+from {
+    width: 0%;
+}
+to {
+    width: 100%;
+}
+}
+@-moz-keyframes progress {
+from {
+    width: 0%;
+}
+to {
+    width: 100%;
+}
+}
+@-ms-keyframes progress {
+from {
+    width: 0%;
+}
+to {
+    width: 100%;
+}
+}
+@-o-keyframes progress {
+from {
+    width: 0%;
+}
+to {
+    width: 100%;
+}
+}
+@keyframes progress {
+from {
+    width: 0%;
+}
+to {
+    width: 100%;
+}
+}
+
+
+/* 閃閃閃 */
+.blink {
+    animation-duration: 1s;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes blink {
+0% {
+    opacity: 1;
+}
+80% {
+    opacity: 1;
+}
+81% {
+    opacity: 0;
+}
+100% {
+    opacity: 0;
+}
+}
+
+
