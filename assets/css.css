@@ -122,6 +122,10 @@ to {
 
 
 /* 閃閃閃 */
+pe{
+  font-size: 22px;
+}
+
 .blink {
     animation-duration: 1s;
     animation-name: blink;
@@ -156,12 +160,12 @@ to {
 
 #IMG_1{
     position:absolute;
-    top: 220px;
+    top: 310px;
     left: 105px;
 }
 #IMG_2{
     position:absolute;
-    top: 135px;
+    top: 230px;
     left: 540px;
 }
 
@@ -172,7 +176,7 @@ to {
 
 #IMG_3{
     position:absolute;
-    top: 135px;
+    top: 230px;
     left: 590px;
 }
 #IMG_3:hover {
@@ -195,18 +199,19 @@ name{
     text-shadow: -1px 1px 0 #A500CC, 1px 1px 0 	#A500CC,1px -1px 0 	#A500CC,-1px -1px 0 #A500CC; 
     text-align: center;
     position: absolute;
-    top: 250px;
+    top: 340px;
     left: 375px;
 }
 saying{
   font-family:'t1';
     font-weight: bold;
+    font-size: 16px;
     color: pink;
     text-shadow: -1px 1px 0 #A500CC, 1px 1px 0 	#A500CC,1px -1px 0 	#A500CC,-1px -1px 0 #A500CC; 
     text-align: center;
     position: absolute;
-    top: 380px;
-    left: 345px;
+    top: 480px;
+    left: 395px;
 }
 
 ski{
@@ -230,6 +235,24 @@ ski:hover span {
     0 0 80px white;
 }
 
+#home{
+  position: fixed;left:93%; top:85%;
+  width:70px;
+}
+
+a.lib{
+  text-decoration:none;
+  color: rgb(255, 41, 158);
+  font-size: 30px;
+  font-weight: bolder;
+  
+}
+
+a.lib:hover{
+  color: rgb(190, 9, 175);
+  font-size: 30px;
+  font-weight: bolder;
+}
 
 /*圓餅*/
 
@@ -251,13 +274,16 @@ ski:hover span {
     margin-left: 20px;
     position: absolute;
     z-index: 100;
-	
+    color: #E6E6FA;
     }
 
 .inside-circle:hover{
 	background-image: url("image/moon.png");
 	background-size: 100%;
-	
+	color: rgb(86, 153, 255);
+  font-family: t2;
+  font-weight: bolder;
+  font-size: 18px;
 }
 
 .mask, .fill{
@@ -375,7 +401,263 @@ ski:hover span {
     text-shadow: -1px 1px 0 #A500CC, 1px 1px 0 	#A500CC,1px -1px 0 	#A500CC,-1px -1px 0 #A500CC; 
 	}
 
+/*證照*/
+  .accordion {
+    background-color:lavender;
+    color: 	#A500CC;
+    cursor: pointer;
+    width: 90%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    border-radius: 10px;
+    margin-top: 5px;
+    text-align: left;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  
+  .active, .accordion:hover {
+    background-color:thistle;
+  }
+  
+  .panel {
+    padding: 0 5px;
+    width: 90%;
+    display: none;
+    background-color:  	#DDDDFF;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid #770077;
+    text-align: center;
+  }
+
+  
+  .aac{
+    margin-top: 10px;}
+
+  .too{
+    float: left;
+    padding: 0 5px;
+    font-family: 't1';
+    font-size: 25px;
+	  top: 140px;
+    font-weight: bold;
+    color: pink;
+    text-shadow: -1px 1px 0 #A500CC, 1px 1px 0 	#A500CC,1px -1px 0 	#A500CC,-1px -1px 0 #A500CC; 
+    text-align: center;
+    width: 400px;
+    margin-left: 10px;
+  }
+
+  .too2{
+    float: right;
+    padding: 0 5px;
+    font-family: 't1';
+    font-size: 25px;
+	  top: 140px;
+    font-weight: bold;
+    color: pink;
+    text-shadow: -1px 1px 0 #A500CC, 1px 1px 0 	#A500CC,1px -1px 0 	#A500CC,-1px -1px 0 #A500CC; 
+    text-align: center;
+    width: 1000px;
+    margin-bottom: 10px;
+  }
+
+
+/*時間線*/
+  .timeline-small {
+    max-width: 950px;
+    
+    overflow: hidden;
+    margin-top: 10px;
+    box-shadow: 0 0 40px #a0a0a0;
+    font-family: 'Open Sans', sans-serif;
+}
+.timeline-small-body ul {
+    
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+.timeline-small-body ul::before {
+    content: ' ';
+    height: 100%;
+    width: 5px;
+    background-color: #FFC0CB;
+    position: absolute;
+    top: 0;
+    left: 2.4em;
+    z-index: -1;
+}
+.timeline-small-body li div {
+    display: inline-block;
+    margin: 1em 0;
+    vertical-align: top;
+}
+.timeline-small-body .bullet {
+    width: 1rem;
+    height: 1rem;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background: #fff;
+    z-index: 1;
+    margin-right: 1rem;
+    margin-top: 7%;
+}
+.timeline-small-body .bullet.pink {
+    background-color: #E38EFF;
+    border: 3px solid #A500CC;
+}
+.timeline-small-body .bullet.green {
+    background-color: #FF88C2;
+    border: 3px solid #FF0088;
+}
+.timeline-small-body .bullet.blue {
+  background-color: #E38EFF;
+  border: 3px solid #A500CC;
+}
+.timeline-small-body .bullet.orange {
+  background-color: #FF88C2;
+  border: 3px solid #FF0088;
+}
+.timeline-small-body .date {
+    width: 23%;
+    font-size: 0.75em;
+    padding-top: 0.40rem;
+    padding-right: 2rem;
+}
+.timeline-small-body .desc {
+    width: 80%;
+    margin-left: 10px;
+}
+.timeline-small-body h3 {
+    font-size: 0.9em;
+    font-weight: 400;
+    margin: 0;
+}
+.timeline-small-body h4 {
+    margin: 0;
+    font-size: 0.7em;
+    font-weight: 400;
+    color: #808080;
+}
+
+.school{
+  font-size: 50px;
+  font-family: 't1';
+  color: whitesmoke;
+}
+
+
+ski1{
+  font-size: 50px;
+  font-family: 't1';
+  color: whitesmoke;
+}
+
+ski1 span{
+  transition: 0.5s;   /* 字間距變大S的時間 */
+}
+
+ski1:hover span {
+    color: white;
+    text-shadow: 0 0 10px rgb(207, 201, 201),
+    0 0 10px #A500CC,
+    0 0 20px #A500CC,
+    0 0 40px #A500CC;
+}
+
+p1{
+  font-size: 25px;
+  color: #FF44AA;
+  font-weight: bolder;
+}
+
+p2{
+  font-size: 18px;
+}
+
+p3{
+  font-size: 22px;
+  color: #A500CC;
+  font-weight: bolder;
+}
+
+.timeimg{
+  width: 300px;
+  height: 200px;
+  margin-left: 10px;
+  border: #FF69B4 dashed 5px;
+}
+
+a.top{
+  text-decoration:none; 
+  color: #FFF;
+  font-size: 25px;
+  font-weight: bolder;
+}
+a:hover.top{
+  color: #A500CC;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+td{ border-style:none;
+  font-family: "t1";
+  text-align: center;
+}
+
+table{
+  border-style:none;
+  text-align: left;
+  width: 100%;
+  float: left;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+
+/*專題*/
+
+too3{
+  font-family: 't1';
+  font-size: 30px;
+  font-weight: bold;
+  color: pink;
+  text-shadow: -1px 1px 0 #A500CC, 1px 1px 0 	#A500CC,1px -1px 0 	#A500CC,-1px -1px 0 #A500CC; 
+  text-align: left;
+  margin-left: 10px;
+}
+
+too4{
+  font-size: 20px;
+  font-family: t1;
+  font-weight: bolder;
+}
+
+too5{
+  font-family: 't1';
+  font-size: 30px;
+  font-weight: bold;
+  color: #FFFF77;
+  text-shadow: -2px 2px 0 #D28EFF, 2px 2px 0 	#D28EFF,2px -2px 0 	#D28EFF,-2px -2px 0 #D28EFF;
+  text-align: left;
+  margin-left: 10px;
+}
+
+
+.hover img {
+  position:absolute;
+  /* CSS3淡出淡入效果,1秒 */
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
 
 
 
-
+.hover img:nth-of-type(2):hover{
+  opacity:0; /*滑鼠滑入時，透明度變0*/
+}
